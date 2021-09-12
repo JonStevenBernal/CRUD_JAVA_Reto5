@@ -9,7 +9,8 @@ public class MainWindow extends JFrame {
     }
 
     private void initComponents(){
-        setTitle("Viajes - Comandante");
+        setTitle("Viajes - Universales" +
+                "");
 
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
