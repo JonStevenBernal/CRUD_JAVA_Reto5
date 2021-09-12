@@ -6,7 +6,10 @@ import java.awt.*;
 public class MainWindow extends JFrame {
     public MainWindow(){
         initComponents();
+        this.setResizable(false);
+
     }
+
 
     private void initComponents(){
         setTitle("Viajes - Universales" +
@@ -23,7 +26,7 @@ public class MainWindow extends JFrame {
         setContentPane(resultsPanel);
         add(new ControlsPanel(resultsPanel));
 
-        setSize(1040, 500);
+        setSize(700, 400);
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         Dimension frameSize  = getSize();
@@ -33,5 +36,6 @@ public class MainWindow extends JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
     }
+
 
 }

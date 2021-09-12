@@ -30,10 +30,11 @@ public class ControlsPanel extends JPanel {
     public ControlsPanel(ResultsPanel resultsPanel) {
         this.tablaresultados = resultsPanel.getTblResults();
         initComponents();
+        this.setOpaque(false);
     }
 
     private void initComponents() {
-        setLayout(new GridLayout(2,1));
+        setLayout(new GridLayout(3,1));
         InitialData datoInicial = new InitialData();
         this.setTablaresultados(datoInicial.getComandantes());
         ClickEvent clickEvent = new ClickEvent(this);
